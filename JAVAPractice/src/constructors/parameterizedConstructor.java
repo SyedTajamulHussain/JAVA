@@ -16,7 +16,8 @@ public class parameterizedConstructor {
         parameterizedConstructor pc1 =new parameterizedConstructor("Sidra",2);
         parameterizedConstructor pc2 =new parameterizedConstructor("Sidra",2);
         pc.mymethod();
-        pc1.mymethod();   }
+        pc1.mymethod();
+    }
 
     public void mymethod(){
         System.out.println(name + "  " + id);
