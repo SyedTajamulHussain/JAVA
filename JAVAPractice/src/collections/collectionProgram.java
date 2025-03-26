@@ -1,15 +1,13 @@
 package collections;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
+import java.util.*;
 
 public class collectionProgram {
     public static void main(String[] args) {
         //arrayListExample();
         //hashmapExample();
-        hashsetExample();
+        //hashsetExample();
+        iteratorExample();
     }
 
     public static void arrayListExample(){
@@ -41,7 +39,6 @@ public class collectionProgram {
 
 
     }
-
     public static void hashmapExample(){
         HashMap<String, Integer> hm = new HashMap<>();
         hm.put("Sidra",1);
@@ -61,6 +58,34 @@ public class collectionProgram {
         for(Integer i : hs){
             System.out.println(i);
         }
-
+    HashSet<String> hs1 = new HashSet<>();
+        hs1.add("Anand");
+        hs1.add("candy");
+        hs1.add("zulu");
+        hs1.add("shami");
+        hs1.add("xulo");
+        for(String s : hs1){
+            System.out.println(s);
+        }
     }
+    public static void iteratorExample(){
+        HashSet<Integer> hs = new HashSet<>();
+        hs.add(1);
+        hs.add(2);
+        hs.add(3);
+        hs.add(10);
+        //for(String s : hs){
+          //  System.out.println(s);
+            Iterator<Integer> it = hs.iterator();
+            while(it.hasNext()){
+                Integer i = it.next();
+                if( i > 9) {
+                    it.remove();
+                }
+
+            }
+        System.out.println(hs);
+        //}
+    }
+
 }

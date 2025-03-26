@@ -15,7 +15,7 @@ public class removeDublicate {
     }
 
     public static void removeduplicates(){
-        ArrayList<Integer> ar = new ArrayList<Integer>();
+        ArrayList<Integer> ar = new ArrayList<>();
         ar.add(1);
         ar.add(1);
         ar.add(2);

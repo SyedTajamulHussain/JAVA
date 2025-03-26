@@ -14,9 +14,10 @@ public class parameterizedConstructor {
     public static void main(String[] args) {
         parameterizedConstructor pc =new parameterizedConstructor("haadiya",1);
         parameterizedConstructor pc1 =new parameterizedConstructor("Sidra",2);
-        parameterizedConstructor pc2 =new parameterizedConstructor("Sidra",2);
+        parameterizedConstructor pc2 =new parameterizedConstructor("Sidra",3);
         pc.mymethod();
         pc1.mymethod();
+        pc2.mymethod();
     }
 
     public void mymethod(){
